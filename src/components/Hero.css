@@ -18,6 +18,39 @@
   margin-bottom: 1.5rem;
 }
 
+.btn-outline:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+}
+
+.hero-social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.hero-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-social-icon:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+}
+
 .greeting-badge {
   background: rgba(16, 185, 129, 0.1);
   color: #10b981;
