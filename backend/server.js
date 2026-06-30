@@ -20,13 +20,13 @@ app.post('/api/contact', (req, res) => {
   }
 
   const query = `INSERT INTO contacts (name, email, service, budget, message) VALUES (?, ?, ?, ?, ?)`;
-  
+
   db.run(query, [name, email, service, budget, message], async function (err) {
     if (err) {
       console.error('Error inserting message:', err.message);
       return res.status(500).json({ error: 'Failed to save message. Please try again later.' });
     }
-    
+
     // Try to send email via Brevo
     if (process.env.BREVO_API_KEY) {
       try {
@@ -64,7 +64,7 @@ app.post('/api/contact', (req, res) => {
               <br>
               <p>Best regards,</p>
               <p><strong>Nazmee Jawed</strong></p>
-              <p><a href="https://intern-porject.vercel.app/">My Portfolio</a></p>
+              <p><a href="https://nazmeejawed.github.io/">My Portfolio</a></p>
             </div>
           `
         }, {
@@ -84,8 +84,8 @@ app.post('/api/contact', (req, res) => {
     }
 
     // Respond with success
-    res.status(201).json({ 
-      success: true, 
+    res.status(201).json({
+      success: true,
       message: 'Your message has been sent successfully!',
       data: { id: this.lastID, name, email }
     });
