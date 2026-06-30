@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, MapPin, Mail, Phone, CheckCircle } from 'lucide-react';
+import EarthGlobe from './EarthGlobe';
 import './Contact.css';
 
 const Contact = () => {
@@ -81,6 +82,10 @@ const Contact = () => {
                 <div className="info-icon"><MapPin size={20} /></div>
                 <span>Delhi, 110044</span>
               </div>
+            </div>
+            
+            <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
+              <EarthGlobe />
             </div>
           </motion.div>
 
