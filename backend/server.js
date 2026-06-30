@@ -32,7 +32,7 @@ app.post('/api/contact', (req, res) => {
       try {
         // 1. Send Notification to Nazmee (the owner)
         await axios.post('https://api.brevo.com/v3/smtp/email', {
-          sender: { name: "Portfolio Contact Form", email: "noreply@portfolio.local" },
+          sender: { name: "Portfolio Contact Form", email: process.env.YOUR_EMAIL_ADDRESS },
           to: [{ email: process.env.YOUR_EMAIL_ADDRESS }],
           subject: `New message from ${name}`,
           htmlContent: `
