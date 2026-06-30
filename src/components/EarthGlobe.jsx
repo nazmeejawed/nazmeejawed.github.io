@@ -17,9 +17,9 @@ export default function EarthGlobe() {
       diffuse: 1.2,
       mapSamples: 16000,
       mapBrightness: 6,
-      baseColor: [0.1, 0.1, 0.2], // Dark blueish base
+      baseColor: [1, 1, 1], // White/bright continents
       markerColor: [0.5, 0.2, 0.9], // Purple markers to match theme
-      glowColor: [0.1, 0.1, 0.3], // Subtle glow
+      glowColor: [0.2, 0.1, 0.5], // Purple/blue glow
       markers: [
         // Delhi marker
         { location: [28.6139, 77.2090], size: 0.1 },
