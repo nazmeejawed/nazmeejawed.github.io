@@ -38,3 +38,6 @@ backend/*.log
 
 # Model encryption script (contains password)
 public/models/encrypt.cjs
+
+# Ignore the root resume file (the public/resume.docx is tracked)
+Nazmee_Jawed_Resume.docx
