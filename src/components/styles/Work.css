@@ -164,6 +164,7 @@
   .work-section h2 {
     font-size: 50px;
   }
+}
 @media only screen and (max-width: 1024px) {
   .work-box {
     flex-direction: column !important;
